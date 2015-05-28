@@ -2,8 +2,8 @@ class Lunchlady
 
 
     @@main_dishes = {"Street Taco" => 1.50,
-                   "Burrito" => 4.00,
-                   "Nachos" => 3.00,
+                   "Burrito " => 4.00,
+                   "Nachos  " => 3.00,
                    "Huge Burrito" => 6.00,
                    "Super Nachos" => 5.00,
                    "Quesadilla" => 3.50
@@ -71,7 +71,7 @@ class Lunchlady
     puts "Aquí está su cuenta:"
     sleep 1
     puts ""
-    puts "#{@@main_dishes.keys[@main_dish_choice]}\t\t$#{sprintf('%.2f',@@main_dishes.values[@main_dish_choice])} "
+    puts "#{@@main_dishes.keys[@main_dish_choice]}\t$#{sprintf('%.2f',@@main_dishes.values[@main_dish_choice])} "
     puts "#{@@sides.keys[@side_dish_choice]}\t\t$#{sprintf('%.2f',@@sides.values[@side_dish_choice])}"
     puts "#{@@sides.keys[@side_dish_choice_two]}\t\t$#{sprintf('%.2f',@@sides.values[@side_dish_choice_two])}"
     puts "-"*22
